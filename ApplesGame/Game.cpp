@@ -1,4 +1,9 @@
-﻿#include "Game.h"
+﻿/*●▬▬▬▬▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬▬▬▬▬●
+  ░░░░░░░░░░░ЗДРАТУТИ ░░░░░░░░░░░░░░
+  ●▬▬▬▬▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬▬▬▬▬●
+*/
+
+#include "Game.h"
 #include "Player.h"
 #include "Apple.h"
 #include "Rock.h"
@@ -23,11 +28,11 @@ namespace ApplesGame
             game.leaderboard.push_back(entry);
         }
 
-        // Добавим игрока
+        // Обозначение игрока
         ScoreEntry playerEntry{ "Player", game.numEatenApples };
         game.leaderboard.push_back(playerEntry);
 
-        // Ручная сортировка (пузырьком)
+        // СортировОчка (пузырьком)
         for (size_t i = 0; i < game.leaderboard.size(); ++i)
         {
             for (size_t j = i + 1; j < game.leaderboard.size(); ++j)
@@ -308,10 +313,6 @@ namespace ApplesGame
         }
     }
 }
-
-
-
-
 
 /*
 __________$$____________________$$_______
